@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int num;
+    float total = 0;
+    int media = 0;
+    
+    cout <<" Digite a quantidade de notas:";
+    cin >> num;
+    
+    float nota [num];
+    for (int i = 1; i <= num; i++){
+        printf("Informe a Nota - %d:  ", i);
+        cin >> nota[i];
+        total = total + nota[i];
+        //media = total / 4;
+    }
+    printf("\n Total = %.f", total);
+    //printf("Média geral: ", media);
+    
+    return 0;
+}
